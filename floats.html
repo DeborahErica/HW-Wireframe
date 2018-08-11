@@ -1,64 +1,100 @@
-<!-- STUDENTS: Head to float.css for your assignment -->
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Floats</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="floats.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
-<div id="top-title">
- <header>
-    &lt;header&gt; #ccc
-  </header>
- <section id="left">
-   <h1>Your Name</h1>
-  </section>
 
-  <section id="middle">
-    <h2>About</h2>
-    &lt;section&gt; #888
-  </section>
+    <header>
+        <p>header</p>
+    </header>
 
-  <section id="right">
-    <h3>Portfolio</h3>
-    &lt;section&gt; #666
-  </section>
+    <nav>
+        <p>nav</p>
+    </nav>
 
-  
-</div>
-<div id="middle-section">
-
-    <section id="full">
-        <aside>
-      &lt;aside&gt; #fff
+    <section>
+        <heading>
+            <p>section</p>
+        </heading>
+        <article>
+            <heading>article</heading>
+            <h1>h1, h2, h3</h1>
+            <p>p</p>
+        </article>
+    </section>
+    <aside>
+        <heading>
+            <p>aside</p>
+        </heading>
     </aside>
+    <div class="clear"></div>
 
- 
+    <footer>
+        <p>footer</p>
+    </footer>
+    <style>
+        body{
+            width: 600px;
+            margin: auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            line-height: 34px;
+            color: gray;
+            background: gray;
+            }
+        
+            header,
+            nav,
+            section,
+            aside,
+            footer,
+            {
+           display: block;
+           padding: 10px;
+           margin: 10px;
+           text-align: center;
+           background: white;
+        }  
 
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-        in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+        section{
+            display: block;
+            float: left;
+            width: 495px;
+            height: 267px;
+            overflow: hidden;
+        }        
 
-    &lt;section&gt; #eee
-    <div id="division">
-      &lt;div&gt; #6ea3da
-    </div>
-  </section>
-</div>
+        aside{
+            display: block;
+            float: left;
+            width: 495px;
+            height: 267px;
+            overflow: hidden;
+        }  
+        article{
+            padding: 10px;
+            color: white;
+            background: #777; 
+        }
 
-  <footer>
-    &lt;footer&gt; #ccc
-  </footer>
-
+        .clear{
+            clear: both;
+        }
+        h1, 
+        p{
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            color: #777;
+            text-align: center;
+            background: #ebebeb;
+        }
+        </style>
+    
 </body>
-
 </html>
